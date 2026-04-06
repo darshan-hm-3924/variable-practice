@@ -1,0 +1,16 @@
+name: "varible access"
+on: push
+env:
+    name: "darshan"   
+jobs:
+    demo:
+        runs-on: ubuntu-latest 
+        env:
+            age: 10
+        steps:
+            - name: 1st step
+              env:
+                    place: mysore
+              run: |
+                 echo my name is ${{env.name}} and ${{env.age}} years old and birth of place is ${{env.place}}
+               
