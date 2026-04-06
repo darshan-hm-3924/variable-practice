@@ -12,5 +12,4 @@ jobs:
               env:
                     place: mysore
               run: |
-                 echo my name is ${{env.name}} and ${{env.age}} years old and birth of place is ${{env.place}}
-               
+                 echo my name is ${{env.name}} and ${{env.age}} years old and birth of place is ${{env.place}} and my company is ${{vars.company}}
